@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>This is a title</title>
-        <meta charset="utf-8">
-        <meta name="author" content="Paeniche">
-        
-    </head>
-    
-    <body>
-        <header id="header">
-            <img src="" id="header-img" alt="">
-            <nav id="nav-bar">
-                <a class="nav-link" href="">A</a>
-                <a class="nav-link" href="">B</a>
-                <a class="nav-link" href="">C</a>
-            </nav>
-        </header>
-        <main>
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <label for="email">Please enter your email to get updates</label>
-                <input type="email" name="email" id="email" placeholder="Enter your email">
-                <input type="submit" name="submit" id="submit">
-            </form>
-        </main>
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    </body>
+
+<head>
+    <title>Roto&dash;Wipe</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Paeniche">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <img id="header-img" src='https://i.postimg.cc/Mpm6cqMM/logo.png' alt="Roto-Wipe logo" width="75" height="75"/>
+          </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="">A</a></li>
+                <li><a class="nav-link" href="#video">B</a></li>
+                <li><a class="nav-link" href="">C</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div id="introduction">
+            
+        </div>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label for="email">Please enter your email to get updates</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <input type="submit" name="submit" id="submit">
+        </form>
+
+        <iframe id="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZsyCAVv5IUI"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
 </html>
