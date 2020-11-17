@@ -1,0 +1,16 @@
+body{
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#header-img{
+    display: inline;
+}
+
+.nav-link{
+    display: inline;
+}
