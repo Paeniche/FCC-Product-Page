@@ -1,16 +1,37 @@
-body{
+header{
+    background-color: lightsteelblue;
 }
 
-.header{
-    position: fixed;
-    top: 0;
-    width: 100%;
+main{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#header-img{
-    display: inline;
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-link{
-    display: inline;
+    display: block;
+    padding: 8px;
+}
+
+#header{
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    min-height: 75px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo{
+    width: 60vw;
 }
