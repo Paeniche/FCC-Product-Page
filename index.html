@@ -8,18 +8,27 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 
+    <style>
+        main {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
     <header id="header">
         <div class="logo">
-            <img id="header-img" src='https://i.postimg.cc/Mpm6cqMM/logo.png' alt="Roto-Wipe logo" width="75" height="75"/>
-          </div>
+            <img id="header-img" src='https://i.postimg.cc/Mpm6cqMM/logo.png' alt="Roto-Wipe logo" width="75"
+                height="75" />
+        </div>
         <nav id="nav-bar">
             <ul>
-                <li><a class="nav-link" href="">A</a></li>
-                <li><a class="nav-link" href="#video">B</a></li>
-                <li><a class="nav-link" href="">C</a></li>
+                <li><a class="nav-link" href="#introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#video">Video</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
             </ul>
         </nav>
     </header>
@@ -27,6 +36,8 @@
 
         <div id="introduction">
             <h1>What is Roto&dash;Wipe&quest;</h1>
+            <p>Roto-Wipe is a fantastic new product that automatically wipes your rear for you. No more worrying about
+                lack of toilet paper because your local supermarket is out of stock</p>
         </div>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
             <label for="email">Please enter your email to get updates</label>
@@ -37,6 +48,8 @@
         <iframe id="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZsyCAVv5IUI"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
+
+        <div id="pricing"></div>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
