@@ -15,7 +15,7 @@
             display: flex;
         }
 
-        @media (max-width: 700px) {
+        @media (max-width: 900px) {
             #header {
                 flex-direction: column;
                 height: auto;
@@ -80,7 +80,7 @@
         <div id="pricing" class="grid-vertical">
             <div id="standard" class="edition">
                 <p class="big-font edition-title">Standard edition</p>
-                <ul>
+                <ul class="small-font">
                     <li>
                         <p>Auto-Wiper</p>
                     </li>
@@ -95,7 +95,8 @@
                     </li>
                 </ul>
                 <div class="spacer-sm"></div>
-                <a id="buy-now-standard" class="btn buy-now" href="https://www.amazon.com/Prank-Pack-Roto-Wipe-Prank/dp/B07586Y1T9">BUY NOW</a>
+                <a id="buy-now-standard" class="btn buy-now"
+                    href="https://www.amazon.com/Prank-Pack-Roto-Wipe-Prank/dp/B07586Y1T9">BUY NOW</a>
             </div>
 
         </div>
@@ -122,6 +123,18 @@
         function topFunction() {
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("header").style.top = "0";
+            } else {
+                document.getElementById("header").style.top = "-80px";
+            }
+            prevScrollpos = currentScrollPos;
         }
     </script>
 </body>
