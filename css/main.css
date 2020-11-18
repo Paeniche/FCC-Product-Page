@@ -270,6 +270,13 @@ nav>ul {
     margin: 150px auto;
 }
 
+@media (max-width: 900px){
+    #demo{
+        width: 50%;
+        text-align: center;
+    }
+}
+
 #to-top {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
