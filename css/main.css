@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
 body {
-    background: rgb(0, 10, 185);
-    background: linear-gradient(90deg, rgba(0, 10, 185, 1) 0%, rgba(149, 0, 255, 1) 35%, rgba(6, 77, 207, 1) 100%);
+    /*background: rgb(0, 10, 185);
+    background: linear-gradient(90deg, rgba(0, 10, 185, 1) 0%, rgba(149, 0, 255, 1) 35%, rgba(6, 77, 207, 1) 100%);*/
+    background-color: #DDDDDD;
+    font-family: 'Karla', sans-serif;
 }
 
 header {
@@ -18,22 +22,32 @@ nav>ul {
     height: 100%;
 }
 
-
-
-.nav-link {
-  display: block;
-  color: white;
-  padding: 28px 16px;
-  text-decoration: none;
+.icon {
+    width: 69px;
+    margin-right: 40px;
+    text-align: center;
 }
 
-.nav-link:hover{
+.nav-link {
+    display: block;
+    color: white;
+    padding: 28px 16px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
     color: #000;
     background-color: lightgrey;
 }
 
 .logo {
     width: 60vw;
+}
+
+@media (max-width: 700px){
+    .logo{
+        width: auto;
+    }
 }
 
 .container {
@@ -45,6 +59,12 @@ nav>ul {
     align-items: center;
 }
 
+@media (max-width: 700px){
+    .container{
+        margin-top: 200px;
+    }
+}
+
 .grid {
     display: flex;
     flex-direction: row;
@@ -52,19 +72,21 @@ nav>ul {
     align-items: center;
 }
 
-.icon{
-    padding-right: 25px;
-}
-
-.big-font{
+.big-font {
     font-size: 30px;
+    margin-bottom: 5px;
 }
 
-.small-font{
+.small-font {
     font-size: 15px;
 }
 
-#nav-bar{
+.describers {
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+
+#nav-bar {
     height: 100%;
 }
 
@@ -79,10 +101,5 @@ nav>ul {
 }
 
 #introduction {
-    margin: 50px auto;
-}
-
-#what-is{
-    justify-content: flex-start;
-    margin-bottom: 25px;
+    margin: 50px auto 25px auto;
 }
