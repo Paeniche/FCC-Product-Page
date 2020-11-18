@@ -105,6 +105,18 @@ nav>ul {
     font-size: 15px;
 }
 
+.btn{
+    padding: 0 20px;
+    height: 31px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+}
+
 .bold{
     font-weight: 700;
 }
@@ -112,6 +124,45 @@ nav>ul {
 .describers {
     justify-content: flex-start;
     margin-bottom: 100px;
+}
+
+.spacer-sm{
+    height: 25px;
+}
+
+.edition{
+    display: inherit;
+    flex-direction: column;
+    height: 350px;
+    justify-content: space-between;
+    border: 5px black solid;
+    padding: 30px 10px;
+    align-items: center;
+    background-color: #9F9F9F;
+}
+
+.edition-title{
+    margin-bottom: 60px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.edition > ul{
+    width: 90%;
+    margin-left: 5px;
+}
+
+.edition > ul > li{
+    margin: 15px auto;
+    list-style-type: hiragana;
+}
+
+.buy-now{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
 }
 
 #headline{
@@ -155,19 +206,7 @@ nav>ul {
     display: inherit;
 }
 
-#submit{
-    padding: 0 20px;
-    height: 31px;
-    font-size: 1em;
-    font-weight: 900;
-    text-transform: uppercase;
-    border: 3px black solid;
-    border-radius: 2px;
-    background: transparent;
-    cursor: pointer;
-}
-
-#submit:hover{
+#submit:hover, .buy-now:hover{
     background-color: black;
     color: white;
 }
@@ -175,3 +214,27 @@ nav>ul {
 #vid-conatiner{
     align-items: center;
 }
+
+#pricing{
+    margin: 150px auto;
+}
+
+#to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #646464; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #to-top:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
