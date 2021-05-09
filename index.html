@@ -24,6 +24,9 @@
     </style>
 </head>
 
+<!-- Why can't I figure out how to make the home button go to the very top top of the page without JS, I swear i've done this on my other projects just fine 😡😡 
+It leaves it just barely cut off because the nave bar is in a fixed position-->
+
 <body>
     <header id="header">
         <div class="logo">
@@ -32,13 +35,17 @@
         </div>
         <nav id="nav-bar">
             <ul>
-                <li><a class="nav-link" href="#headline">Home</a></li>
+                <li><a class="nav-link" href="#nav-bar-spacer">Home</a></li>
                 <li><a class="nav-link" href="#introduction">Introduction</a></li>
                 <li><a class="nav-link" href="#get-started">Video</a></li>
                 <li><a class="nav-link" href="#pricing">Pricing</a></li>
             </ul>
         </nav>
     </header>
+
+    <div id="nav-bar-spacer">
+        <!-- Honestly, this is just here because I could not get the Home button on the navbar to cause rotowipe to be at the top of the viewport, so I am adding a div here to match the height of the navbar -->
+    </div>
     <main class="container">
         <p class="giant-font center" id="headline">Roto-Wipe</p>
         <div id="introduction">
@@ -65,7 +72,7 @@
         <hr>
         <div id="get-started">
             <p class="big-font bold">The Cleanest Your Butt Will Ever Be</p>
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
                 <input type="email" name="email" id="email" placeholder="Enter your email address">
                 <input type="submit" name="submit" id="submit" class="btn" value="Get Started">
             </form>
