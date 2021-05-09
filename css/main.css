@@ -219,6 +219,16 @@ nav > ul {
   padding-bottom: 12px;
   border: 5px solid black;
 }
+
+#headline-area {
+  padding-top: 100px;
+}
+
+@media (max-width: 900px) {
+  #headline-area {
+    padding-top: 20rem;
+  }
+}
 #nav-bar {
   height: 100%;
 }
@@ -284,17 +294,6 @@ nav > ul {
   #demo {
     width: 50%;
     text-align: center;
-  }
-}
-
-#nav-bar-spacer {
-  height: 100px;
-  width: 1px;
-}
-
-@media (max-width: 900px) {
-  #nav-bar-spacer {
-    height: 27rem;
   }
 }
 
